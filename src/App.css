@@ -56,3 +56,10 @@ button{
 .textDark{
   color: #fff;
 }
+
+/*Confirmation */
+
+.card{
+  max-width: 90%;
+  margin-top: 20px;
+}

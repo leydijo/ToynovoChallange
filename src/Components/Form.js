@@ -1,5 +1,4 @@
 import React from 'react';
-import Routes from './Routes';
 import {Link } from 'react-router-dom';
 
 
@@ -24,9 +23,13 @@ class Form extends React.Component{
         })
     };
 
-   /* updateForm = () => {
-        alert ('Su nombre es:' + this.state.fullname + ' ' + 'Le enviaremos un correo a: '+ this.state.email) ;
-    }*/
+ 
+ updateForm = () => {
+       
+       console.log('Su nombre es:' + this.state.fullname + ' ' + 'Le enviaremos un correo a: '+ this.state.email) ;
+    }
+
+    
     
     render(){
        
@@ -54,10 +57,8 @@ class Form extends React.Component{
                         placeholder="Ingrese Email" 
                         />
                     </div>
-                   
-               
                       
-                    <Link to = "confirmation"> Enviar </Link>
+                    <Link to = "confirmation"> <input type="submit" onClick={this.updateForm} className="btn btn-info" value="Enviar" />  </Link>
                          
                 </form>      
             
